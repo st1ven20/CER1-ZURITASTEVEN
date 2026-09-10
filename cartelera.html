@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Hojas de estilo locales -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <title>Centro Cultural Puerto Abierto - Cartelera de Actividades</title>
+</head>
+
+<body>
+
+    <!-- HEADER Y NAVEGACIÓN -->
+    <header class="bg-white border-bottom">
+        <div class="container text-center py-4">
+            
+            <!-- LOGO / MARCA CENTRADA -->
+            <a class="navbar-brand d-inline-block text-dark text-decoration-none" href="index.html">
+                <div class="lh-1">
+                    <span class="d-block fs-2 fw-bold text-uppercase tracking-wide">Centro Cultural</span>
+                    <span class="d-block fs-3 fw-light text-uppercase tracking-widest text-secondary">Puerto Abierto</span>
+                </div>
+            </a>
+
+            <!-- BARRA DE NAVEGACIÓN -->
+            <nav class="navbar navbar-expand-lg bg-white mt-3 p-0">
+                <div class="container-fluid justify-content-center">
+                    
+                    <button class="navbar-toggler mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#menuCentrado">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-center" id="menuCentrado">
+                        <ul class="navbar-nav gap-3">
+                            <li class="nav-item">
+                                <a class="nav-link fw-semibold text-secondary" href="index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active fw-semibold text-secondary border-bottom border-2 border-primary" aria-current="page" href="cartelera.html">Cartelera de Actividades</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fw-semibold text-secondary" href="inscripcion.html">Inscripción</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="container my-5">
+
+        <!-- BANNER DE CABECERA ESTILO DE REFERENCIA -->
+        <section class="mb-5">
+            <div class="hero-banner-pagina shadow-sm" style="background-image: url('img/banner-cartelera.jpg');">
+                <div class="overlay"></div>
+                <div class="contenido-banner text-white">
+                    <h1 class="display-4 fw-bold mb-0">Cartelera de Actividades</h1>
+                    <p class="lead mb-0 text-white-50">Programación cultural, talleres y eventos de la temporada</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- GRILLA DE LAS 6 ACTIVIDADES REQUERIDAS -->
+        <section class="row g-4 mb-5">
+
+            <!-- ACTIVIDAD 1: MÚSICA -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <article class="card h-100 border-0 shadow-sm">
+                    <img src="img/ensamble-acustico.jpg" class="card-img-top object-fit-cover" alt="Ensamble Acústico" style="height: 220px;">
+                    <div class="card-body p-4 d-flex flex-column">
+                        <div class="mb-2">
+                            <span class="badge bg-primary text-uppercase">Música</span>
+                        </div>
+                        <h3 class="card-title h5 fw-bold text-dark">Ensamble Acústico Puerto Abierto</h3>
+                        <p class="card-text text-secondary small mb-3">
+                            Presentación musical en vivo con artistas regionales interpretando un variado repertorio tradicional y contemporáneo.
+                        </p>
+                        <div class="mt-auto border-top pt-3 small text-muted">
+                            <p class="mb-1"><strong>Fecha:</strong> 23 de Noviembre, 2026</p>
+                            <p class="mb-1"><strong>Hora:</strong> 18:00 hrs</p>
+                            <p class="mb-3"><strong>Lugar:</strong> Salón Principal</p>
+                            <a href="inscripcion.html" class="btn btn-outline-dark btn-sm w-100 fw-semibold text-uppercase">Inscribirse</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- ACTIVIDAD 2: EXPOSICIONES -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <article class="card h-100 border-0 shadow-sm">
+                    <img src="img/exposicion-arte.avif" class="card-img-top object-fit-cover" alt="Convocatoria de Artes Visuales" style="height: 220px;">
+                    <div class="card-body p-4 d-flex flex-column">
+                        <div class="mb-2">
+                            <span class="badge bg-dark text-uppercase">Exposición</span>
+                        </div>
+                        <h3 class="card-title h5 fw-bold text-dark">Convocatoria de Artes Visuales 2026</h3>
+                        <p class="card-text text-secondary small mb-3">
+                            Muestra de pinturas y esculturas contemporáneas de artistas locales emergentes en nuestras salas principales.
+                        </p>
+                        <div class="mt-auto border-top pt-3 small text-muted">
+                            <p class="mb-1"><strong>Fecha:</strong> 16 de Diciembre, 2026</p>
+                            <p class="mb-1"><strong>Hora:</strong> 10:00 hrs</p>
+                            <p class="mb-3"><strong>Lugar:</strong> Galería Sala A</p>
+                            <a href="inscripcion.html" class="btn btn-outline-dark btn-sm w-100 fw-semibold text-uppercase">Inscribirse</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- ACTIVIDAD 3: CINE -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <article class="card h-100 border-0 shadow-sm">
+                    <img src="img/claqueta-cine.jpg" class="card-img-top object-fit-cover" alt="Ciclo de Cine" style="height: 220px;">
+                    <div class="card-body p-4 d-flex flex-column">
+                        <div class="mb-2">
+                            <span class="badge bg-danger text-uppercase">Cine</span>
+                        </div>
+                        <h3 class="card-title h5 fw-bold text-dark">Ciclo de Cine Latinoamericano</h3>
+                        <p class="card-text text-secondary small mb-3">
+                            Proyección semanal de cortometrajes regionales con un conversatorio posterior junto a sus creadores y directores.
+                        </p>
+                        <div class="mt-auto border-top pt-3 small text-muted">
+                            <p class="mb-1"><strong>Fecha:</strong> 20 de Diciembre, 2026</p>
+                            <p class="mb-1"><strong>Hora:</strong> 19:00 hrs</p>
+                            <p class="mb-3"><strong>Lugar:</strong> Auditorio B</p>
+                            <a href="inscripcion.html" class="btn btn-outline-dark btn-sm w-100 fw-semibold text-uppercase">Inscribirse</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- ACTIVIDAD 4: TALLERES -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <article class="card h-100 border-0 shadow-sm">
+                    <img src="img/galeria.avif" class="card-img-top object-fit-cover" alt="Taller de Pintura" style="height: 220px;">
+                    <div class="card-body p-4 d-flex flex-column">
+                        <div class="mb-2">
+                            <span class="badge bg-success text-uppercase">Taller</span>
+                        </div>
+                        <h3 class="card-title h5 fw-bold text-dark">Taller Práctico de Óleo y Acuarela</h3>
+                        <p class="card-text text-secondary small mb-3">
+                            Curso intensivo para principiantes enfocado en la teoría del color y mezcla de materiales.
+                        </p>
+                        <div class="mt-auto border-top pt-3 small text-muted">
+                            <p class="mb-1"><strong>Fecha:</strong> Todos los Sábados</p>
+                            <p class="mb-1"><strong>Hora:</strong> 11:00 hrs</p>
+                            <p class="mb-3"><strong>Lugar:</strong> Taller Multiuso 1</p>
+                            <a href="inscripcion.html" class="btn btn-outline-dark btn-sm w-100 fw-semibold text-uppercase">Inscribirse</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- ACTIVIDAD 5: TEATRO -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <article class="card h-100 border-0 shadow-sm">
+                    <img src="img/teatro.jpg" class="card-img-top object-fit-cover" alt="Obra de Teatro" style="height: 220px;">
+                    <div class="card-body p-4 d-flex flex-column">
+                        <div class="mb-2">
+                            <span class="badge bg-warning text-dark text-uppercase">Teatro</span>
+                        </div>
+                        <h3 class="card-title h5 fw-bold text-dark">Obra Dramática: "Historias del Puerto"</h3>
+                        <p class="card-text text-secondary small mb-3">
+                            Montaje teatral comunitario ambientado en el Valparaíso de los años 50 con música en vivo.
+                        </p>
+                        <div class="mt-auto border-top pt-3 small text-muted">
+                            <p class="mb-1"><strong>Fecha:</strong> 28 de Noviembre, 2026</p>
+                            <p class="mb-1"><strong>Hora:</strong> 20:00 hrs</p>
+                            <p class="mb-3"><strong>Lugar:</strong> Teatro Principal</p>
+                            <a href="inscripcion.html" class="btn btn-outline-dark btn-sm w-100 fw-semibold text-uppercase">Inscribirse</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- ACTIVIDAD 6: CONVERSATORIO -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <article class="card h-100 border-0 shadow-sm">
+                    <img src="img/lectura.avif" class="card-img-top object-fit-cover" alt="Encuentro de Poesía" style="height: 220px;">
+                    <div class="card-body p-4 d-flex flex-column">
+                        <div class="mb-2">
+                            <span class="badge bg-info text-dark text-uppercase">Conversatorio</span>
+                        </div>
+                        <h3 class="card-title h5 fw-bold text-dark">Encuentro de Poesía y Literatura</h3>
+                        <p class="card-text text-secondary small mb-3">
+                            Jornada de micrófono abierto y lectura poética compartida con autores locales de la región.
+                        </p>
+                        <div class="mt-auto border-top pt-3 small text-muted">
+                            <p class="mb-1"><strong>Fecha:</strong> 05 de Diciembre, 2026</p>
+                            <p class="mb-1"><strong>Hora:</strong> 17:00 hrs</p>
+                            <p class="mb-3"><strong>Lugar:</strong> Sala de Lectura</p>
+                            <a href="inscripcion.html" class="btn btn-outline-dark btn-sm w-100 fw-semibold text-uppercase">Inscribirse</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <small>© 2026 Centro Cultural Puerto Abierto. Todos los derechos reservados.</small>
+        </div>
+    </footer>
+
+    <!-- Script de Bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
