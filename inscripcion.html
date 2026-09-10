@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Hojas de estilo locales -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <title>Centro Cultural Puerto Abierto - Inscripción</title>
+</head>
+
+<body>
+
+    <!-- HEADER Y NAVEGACIÓN -->
+    <header class="bg-white border-bottom">
+        <div class="container text-center py-4">
+            
+            <!-- LOGO CENTRADO -->
+            <a class="navbar-brand d-inline-block text-dark text-decoration-none" href="index.html">
+                <div class="lh-1">
+                    <span class="d-block fs-2 fw-bold text-uppercase tracking-wide">Centro Cultural</span>
+                    <span class="d-block fs-3 fw-light text-uppercase tracking-widest text-secondary">Puerto Abierto</span>
+                </div>
+            </a>
+
+            <!-- MENÚ DE NAVEGACIÓN -->
+            <nav class="navbar navbar-expand-lg bg-white mt-3 p-0">
+                <div class="container-fluid justify-content-center">
+                    
+                    <button class="navbar-toggler mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#menuCentrado">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-center" id="menuCentrado">
+                        <ul class="navbar-nav gap-3">
+                            <li class="nav-item">
+                                <a class="nav-link fw-semibold text-secondary" href="index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fw-semibold text-secondary" href="cartelera.html">Cartelera de Actividades</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active fw-semibold text-secondary border-bottom border-2 border-primary" aria-current="page" href="inscripcion.html">Inscripción</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="container my-5">
+
+        <!-- BANNER SUPERIOR CON ESTILO DE REFERENCIA -->
+        <!-- BANNER SUPERIOR CON ETIQUETA IMG -->
+        <section class="mb-5">
+            <div class="hero-banner-pagina position-relative overflow-hidden rounded-3 shadow-sm" style="height: 260px;">
+                <!-- Imagen de fondo -->
+                <img src="img/inscripcion.jpg" alt="Inscripción a Actividades" class="w-100 h-100 object-fit-cover position-absolute top-0 start-0">
+                
+                <!-- Capa oscura de superposición (Overlay) -->
+                <div class="overlay position-absolute top-0 start-0 w-100 h-100" style="background: rgba(0, 0, 0, 0.45); z-index: 1;"></div>
+                
+                <!-- Texto superpuesto -->
+                <div class="contenido-banner position-absolute bottom-0 start-0 p-4 text-white" style="z-index: 2;">
+                    <h1 class="display-4 fw-bold mb-0">Inscripción a Actividades</h1>
+                    <p class="lead mb-0 text-white-50">Completa el formulario para reservar tu cupo en nuestros talleres y eventos</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FORMULARIO DE INSCRIPCIÓN Y PANEL DE INFORMACIÓN -->
+        <div class="row g-5">
+
+            <!-- COLUMNA IZQUIERDA: FORMULARIO -->
+            <div class="col-12 col-lg-8">
+                <div class="bg-white p-4 p-md-5 rounded-3 border shadow-sm">
+                    <h2 class="h3 fw-bold text-dark border-bottom pb-3 mb-4">Formulario de Registro</h2>
+
+                    <form action="#" method="POST" class="needs-validation">
+                        
+                        <!-- 1. SELECCIÓN DE ACTIVIDAD -->
+                        <div class="mb-4">
+                            <label for="actividad" class="form-label fw-semibold text-dark">Actividad de interés <span class="text-danger">*</span></label>
+                            <select class="form-select form-select-lg" id="actividad" name="actividad" required>
+                                <option value="" selected disabled>-- Selecciona una actividad de la cartelera --</option>
+                                <option value="ensamble">Ensamble Acústico Puerto Abierto (Música)</option>
+                                <option value="exposicion">Convocatoria de Artes Visuales 2026 (Exposición)</option>
+                                <option value="cine">Ciclo de Cine Latinoamericano (Cine)</option>
+                                <option value="taller">Taller Práctico de Óleo y Acuarela (Taller)</option>
+                                <option value="teatro">Obra Dramática: "Historias del Puerto" (Teatro)</option>
+                                <option value="literatura">Encuentro de Poesía y Literatura (Conversatorio)</option>
+                            </select>
+                        </div>
+
+                        <!-- 2. DATOS PERSONALES -->
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label fw-semibold text-dark">Nombre completo <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ej: María González" required minlength="3">
+                        </div>
+
+                        <div class="row g-3 mb-3">
+                            <div class="col-12 col-md-6">
+                                <label for="email" class="form-label fw-semibold text-dark">Correo electrónico <span class="text-danger">*</span></label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="nombre@correo.com" required>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label for="telefono" class="form-label fw-semibold text-dark">Teléfono <span class="text-danger">*</span></label>
+                                <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="+56 9 1234 5678" required>
+                            </div>
+                        </div>
+
+                        <!-- EDAD COMO ENTRADA DE TEXTO LIBRE -->
+                        <div class="mb-3">
+                            <label for="edad" class="form-label fw-semibold text-dark">Edad <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="edad" name="edad" placeholder="Ej: 25 años" required>
+                        </div>
+
+                        <!-- 4. COMENTARIOS ADICIONALES -->
+                        <div class="mb-4">
+                            <label for="comentarios" class="form-label fw-semibold text-dark">Comentarios adicionales</label>
+                            <textarea class="form-control" id="comentarios" name="comentarios" rows="3" placeholder="Indícanos si tienes alguna consulta o requerimiento especial..."></textarea>
+                        </div>
+
+                        <!-- 5. ACEPTACIÓN DE CONDICIONES (CHECKBOX) -->
+                        <div class="form-check mb-4">
+                            <input class="form-check-input" type="checkbox" id="condiciones" name="condiciones" required>
+                            <label class="form-check-label text-secondary small" for="condiciones">
+                                Acepto las condiciones de participación y el uso de datos para la gestión del evento. <span class="text-danger">*</span>
+                            </label>
+                        </div>
+
+                        <!-- 6. BOTONES DE ACCIÓN -->
+                        <div class="d-flex flex-column flex-sm-row gap-3 pt-2">
+                            <button type="submit" class="btn btn-dark btn-lg px-4 text-uppercase fw-semibold">Confirmar Inscripción</button>
+                            <button type="reset" class="btn btn-outline-secondary btn-lg px-4 text-uppercase fw-semibold">Limpiar Formulario</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+
+            <!-- COLUMNA DERECHA: INFORMACIÓN Y PREGUNTAS FRECUENTES -->
+            <div class="col-12 col-lg-4">
+                <div class="bg-light p-4 rounded-3 border mb-4">
+                    <h3 class="h5 fw-bold text-dark border-bottom pb-2 mb-3">Información Importante</h3>
+                    <ul class="list-unstyled mb-0 small text-secondary lh-lg">
+                        <li class="mb-2"><strong>Ubicación:</strong> Av. Errázuriz 1024, Valparaíso.</li>
+                        <li class="mb-2"><strong>Costo:</strong> Todas nuestras actividades de la temporada son gratuitas.</li>
+                        <li class="mb-2"><strong>Puntualidad:</strong> Se recomienda llegar 15 minutos antes del inicio de la función o taller.</li>
+                        <li class="mb-0"><strong>Confirmación:</strong> Recibirás un comprobante digital en tu correo una vez enviado el formulario.</li>
+                    </ul>
+                </div>
+
+                <div class="card border-0 bg-dark text-white p-4 rounded-3">
+                    <h3 class="h5 fw-bold mb-2">¿Tienes dudas?</h3>
+                    <p class="small text-white-50 mb-3">Escríbenos directamente a nuestro equipo de atención a la comunidad.</p>
+                    <p class="mb-1 small"><strong> Correo:</strong> contacto@puertoabierto.cl</p>
+                    <p class="mb-0 small"><strong> Teléfono:</strong> +56 32 250 4000</p>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <small>© 2026 Centro Cultural Puerto Abierto. Todos los derechos reservados.</small>
+        </div>
+    </footer>
+
+    <!-- Script de Bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
